@@ -1,0 +1,10 @@
+
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">      
+        <input type="text" name="name" [(ngModel)]="name" /> <br>
+        <input type="password" name="password" [(ngModel)]="password" style="margin-top: 20px;"/>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+{{resuld|json}}
