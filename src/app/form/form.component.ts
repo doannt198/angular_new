@@ -9,12 +9,13 @@ import { HttpClient } from '@angular/common/http';
 export class FormComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { }
-
+  name="";
+  password="";
+  resuld:any;
   ngOnInit(): void {
 
   }
-  onSubmit(){
-    
+  onSubmit(form:any){
+      this.resuld=form.value
   }
-
 }
